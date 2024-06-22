@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"author": "kouji_kawamura <45913424+kouji0705@users.noreply.github.com>",
 	"scripts": {
-		"exec": "ts-node -r tsconfig-paths/register src/index.ts"
+		"exec": "ts-node -r tsconfig-paths/register src/index.ts",
+		"test": "jest"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.8.2",
