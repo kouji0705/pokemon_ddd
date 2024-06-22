@@ -1,4 +1,4 @@
-import type { PokemonType } from "../enums/PokemonType";
+import type { PokemonType } from "@enums/PokemonType";
 
 export class Move {
 	constructor(
