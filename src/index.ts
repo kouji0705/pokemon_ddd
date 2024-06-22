@@ -15,10 +15,10 @@ const pikachu = new Pokemon(
     speed: 90,
   },
   [
-    new Move('Thunder Shock', PokemonType.Electric, 40),
-    new Move('Quick Attack', PokemonType.Normal, 40),
-    new Move('Thunderbolt', PokemonType.Electric, 90),
-    new Move('Iron Tail', PokemonType.Steel, 100),
+    new Move('でんきショック', PokemonType.Electric, 40),
+    new Move('でんこうせっか', PokemonType.Normal, 40),
+    new Move('10まんボルト', PokemonType.Electric, 90),
+    new Move('アイアンテール', PokemonType.Steel, 100),
   ],
 );
 

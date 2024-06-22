@@ -4,4 +4,3 @@ export interface Stats {
     defense: number;
     speed: number;
   }
-  
