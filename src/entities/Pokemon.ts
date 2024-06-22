@@ -5,10 +5,10 @@ import { Stats } from "@entities/Stats";
 export class Pokemon {
 	constructor(
 		public readonly id: number,
-		public readonly name: string,
-		public readonly type: PokemonType[],
-		private readonly stats: Stats,
-		private readonly moves: Move[],
+		public readonly name: string, // ポケモンの名前
+		public readonly type: PokemonType[], // ポケモンのタイプ
+		private readonly stats: Stats, // ポケモンのステータス
+		private readonly moves: Move[], // ポケモンの技
 	) {
 		if (moves.length > 4) {
 			throw new Error("ポケモンは4つまでしか技を持てません。");
