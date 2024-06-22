@@ -4,8 +4,8 @@ import { PokemonType } from "@enums/PokemonType";
 
 // サンプルポケモンの定義
 const pikachu = new Pokemon(
-	"001",
-	"Pikachu",
+	25,
+	"ピカチュウ",
 	[PokemonType.Electric],
 	{
 		hp: 35,

@@ -4,7 +4,7 @@ import { Stats } from "@entities/Stats";
 
 export class Pokemon {
 	constructor(
-		public readonly id: string,
+		public readonly id: number,
 		public readonly name: string,
 		public readonly type: PokemonType[],
 		private readonly stats: Stats,

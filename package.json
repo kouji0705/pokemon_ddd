@@ -6,5 +6,8 @@
   "author": "kouji_kawamura <45913424+kouji0705@users.noreply.github.com>",
   "devDependencies": {
     "@biomejs/biome": "1.8.2"
+  },
+  "dependencies": {
+    "tsconfig-paths": "^4.2.0"
   }
 }
