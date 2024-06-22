@@ -1,6 +1,6 @@
-import type { PokemonType } from "../enums/PokemonType";
-import type { Stats } from "./Stats";
-import type { Move } from "./Move";
+import { PokemonType } from "@/enums/PokemonType";
+import type { Move } from "@entities/Move";
+import { Stats } from "./Stats";
 
 export class Pokemon {
 	constructor(
