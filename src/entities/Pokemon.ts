@@ -25,7 +25,7 @@ export class Pokemon {
 		return this.moves;
 	}
 
-	// ダメージを受けるメソッド
+	// ダメージを受けるメソッド	
 	receiveDamage(damage: number): void {
 		this.stats.hp -= damage;
 	}

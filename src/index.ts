@@ -33,3 +33,4 @@ const battle = new Battle(pikachu, bulbasaur);
 
 // バトルを実行
 battle.battleTurn();
+battle.battleTurn();
