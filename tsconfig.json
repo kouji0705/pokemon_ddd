@@ -12,7 +12,8 @@
 		"paths": {
 			"@/*": ["src/*"],
 			"@entities/*": ["src/entities/*"],
-			"@enums/*": ["src/enums/*"]
+			"@enums/*": ["src/enums/*"],
+			"@services/*": ["src/services/*"]
 		}
 	},
 	"include": ["src/**/*.ts"],

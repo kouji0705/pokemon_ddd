@@ -1,28 +1,36 @@
-import { Move } from "@entities/Move";
 import { Pokemon } from "@entities/Pokemon";
 import { PokemonType } from "@enums/PokemonType";
+import { Stats } from "@entities/Stats";
+import { Move } from "@entities/Move";
+import { Battle } from "@services/Battle"; // サービスのインポートパスを修正
 
-// サンプルポケモンの定義
+const pikachuStats: Stats = { hp: 100, attack: 55, defense: 40, speed: 90 };
+const bulbasaurStats: Stats = { hp: 100, attack: 49, defense: 49, speed: 45 };
+
+const thunderbolt: Move = {
+	name: "Thunderbolt",
+	type: PokemonType.Electric,
+	power: 90,
+};
+const tackle: Move = { name: "Tackle", type: PokemonType.Normal, power: 40 };
+
 const pikachu = new Pokemon(
 	25,
-	"ピカチュウ",
+	"Pikachu",
 	[PokemonType.Electric],
-	{
-		hp: 35,
-		attack: 55,
-		defense: 40,
-		speed: 90,
-	},
-	[
-		new Move("でんきショック", PokemonType.Electric, 40),
-		new Move("でんこうせっか", PokemonType.Normal, 40),
-		new Move("10まんボルト", PokemonType.Electric, 90),
-		new Move("アイアンテール", PokemonType.Steel, 100),
-	],
+	pikachuStats,
+	[thunderbolt],
+);
+const bulbasaur = new Pokemon(
+	1,
+	"Bulbasaur",
+	[PokemonType.Grass, PokemonType.Poison],
+	bulbasaurStats,
+	[tackle],
 );
 
-// Pikachuのステータスを表示
-console.log(pikachu.getStats());
+const battle = new Battle(pikachu, bulbasaur);
 
-// Pikachuの技を表示
-console.log(pikachu.getMoves());
+// バトルを実行
+battle.battleTurn();
+battle.battleTurn();

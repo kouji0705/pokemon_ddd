@@ -24,4 +24,9 @@ export class Pokemon {
 	getMoves(): Move[] {
 		return this.moves;
 	}
+
+	// ダメージを受けるメソッド	
+	receiveDamage(damage: number): void {
+		this.stats.hp -= damage;
+	}
 }
